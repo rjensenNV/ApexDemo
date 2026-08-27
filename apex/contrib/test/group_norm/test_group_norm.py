@@ -109,10 +109,6 @@ def _has_sufficient_cuda_memory(required_bytes: int, *, safety_factor: float = 0
     return required_bytes <= int(free_bytes * safety_factor)
 
 
-@unittest.skipIf(
-    torch.cuda.get_device_properties().multi_processor_count < 16,
-    "GroupNorm is unsupported on low SM count devices",
-)
 @unittest.skipIf(SKIP_TEST, f"{SKIP_TEST}")
 class GroupNormTest(unittest.TestCase):
     def setUp(self, seed=0):
