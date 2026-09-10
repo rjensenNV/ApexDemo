@@ -65,8 +65,8 @@ For performance and full functionality, we recommend installing Apex with CUDA a
 ##### Using Environment Variables (Recommended)
 
 ```bash
-git clone https://github.com/NVIDIA/apex
-cd apex
+git clone --recurse-submodules https://github.com/rjensenNV/ApexDemo.git
+cd ApexDemo
 # Build with core extensions (cpp and cuda)
 APEX_CPP_EXT=1 APEX_CUDA_EXT=1 pip install -v --no-build-isolation .
 
