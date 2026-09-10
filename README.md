@@ -139,6 +139,7 @@ If a requirement of a module is not met, then it will not be built.
 |  `fused_weight_gradient_mlp_cuda`  |  `APEX_CUDA_EXT=1`  |  `--cuda_ext`  | Requires CUDA>=11 |
 |  `permutation_search_cuda`  |  `APEX_PERMUTATION_SEARCH=1`  |  `--permutation_search`  | [`apex.contrib.sparsity`](./apex/contrib/sparsity)  |
 |  `bnp`        |  `APEX_BNP=1`          |  `--bnp`         |  [`apex.contrib.groupbn`](./apex/contrib/groupbn) |
+|  `group_norm_cuda`, `group_norm_v2_cuda`  |  `APEX_GROUP_NORM=1`  |  `--group_norm`  |  [`apex.contrib.group_norm`](./apex/contrib/group_norm) |
 |  `xentropy`   |  `APEX_XENTROPY=1`     |  `--xentropy`    |  [`apex.contrib.xentropy`](./apex/contrib/xentropy)  |
 |  `focal_loss_cuda`  |  `APEX_FOCAL_LOSS=1`  |  `--focal_loss`  |  [`apex.contrib.focal_loss`](./apex/contrib/focal_loss)  |
 |  `fused_index_mul_2d`  |  `APEX_INDEX_MUL_2D=1`  |  `--index_mul_2d`  |  [`apex.contrib.index_mul_2d`](./apex/contrib/index_mul_2d)  |
